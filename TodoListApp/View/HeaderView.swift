@@ -14,7 +14,7 @@ struct HeaderView: View {
             RoundedRectangle(cornerRadius: 0)
               .foregroundColor(Color.pink)
               .rotationEffect(Angle(degrees: 15))
-              .offset(x: 0, y: -100)
+              .offset(x: 0, y: 0)
           VStack {
               Text("To Do List")
                   .font(.system(size: 50))
@@ -25,8 +25,8 @@ struct HeaderView: View {
                   .foregroundColor(Color.white)
           }
       }
-      .frame(width: width * 3, height: 400)
-      .offset(x: 0, y: -300)
+      .frame(width: width, height: 400)
+      .offset(x: 0, y: 0)
     }
 }
 
