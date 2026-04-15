@@ -9,7 +9,21 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader{ geo in
+            VStack(spacing: 0){
+                HeaderView(
+                    width: geo.size.width,
+                    title: "Register",
+                    subtitle: "Start organizing todos",
+                    bottomTrailing: 0.55,
+                    bottomLeading: 0.80,
+                    background: .orange
+                )
+                Spacer()
+            }
+            .frame(width: geo.size.width, height: geo.size.height)
+            .ignoresSafeArea(edges: .top)
+        }
     }
 }
 
